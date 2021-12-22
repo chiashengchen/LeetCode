@@ -1,6 +1,6 @@
 package Algorithm;
 
-public class QuickSort {
+public class QuickSort extends Sorting {
 	public void sorting(int[] arr) {
 		quickSort(arr, 0, arr.length - 1);
 	}
@@ -53,4 +53,5 @@ public class QuickSort {
 			System.out.print(a[i] + " ");
 		}
 	}
+
 }

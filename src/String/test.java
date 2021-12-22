@@ -6,7 +6,14 @@ import java.util.List;
 public class test {
 	public static void main(String[] args) {
 		test test1 = new test();
-		System.out.println(test1.generateParenthesis(1));
+		String a = "abc";
+		String b = new String("abc");
+		System.out.println("b == a = " + (b == a));
+		System.out.println("b.equals(a) = " + b.equals(a));
+//		System.out.println("a.intern() == b = " + (a.intern() == b));
+		System.out.println("a.hashCode() = " + a.hashCode());
+		System.out.println("b.hashCode() = " + b.hashCode());
+//		System.out.println(test1.generateParenthesis(1));
 	}
 	public List<String> generateParenthesis(int n) {
         LinkedList<String> ans = new LinkedList<String>();
